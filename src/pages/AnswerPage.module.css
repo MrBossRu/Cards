@@ -1,0 +1,10 @@
+.container1 {
+    width: 100%;
+    margin: 0px auto;
+    height: 100%;
+    min-height: calc(100vh - 640px);
+    font-size: xx-large;
+    position: relative;
+    text-align: center;
+    top: 10px;
+}

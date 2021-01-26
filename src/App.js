@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 
-function App() {
+import 'materialize-css'
+import {CardPage} from "./pages/CardPage";
+import {QuestionsPage} from "./pages/QuestionsPage";
+import {EditQuestionPage} from "./pages/EditQuestionPage";
+import {Navbar} from "./components/Navbar";
+import {AnswerPage} from "./pages/AnswerPage";
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+          <Navbar/>
+          <div className='container'>
+              <Switch>
+                  <Route exact path="/cards" render={() => <CardPage state={props.state} />}/>
+                  <Route exact path="/cards/:key" render={() => <CardPage state={props.state} />}/>
+                  <Route exact path="/answer/:key" render={() => <AnswerPage state={props.state}/>}/>
+                  <Route exact path="/questions" render={() => <QuestionsPage state={props.state}/>}/>
+                  <Route exact path="/questions/:page" render={() => <QuestionsPage state={props.state}/>}/>
+                  <Route exact path="/questions/:key/edit" render={() => <EditQuestionPage state={props.state}/>}/>
+                  <Redirect to="/cards"/>
+              </Switch>
+          </div>
+      </BrowserRouter>
   );
 }
 

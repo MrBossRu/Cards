@@ -1,0 +1,117 @@
+.ul{
+    margin: auto;
+    padding: 400px 0 0 0;
+    display: table;
+    clear: both;
+    position: relative;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.li_btn{
+    width: 100px;
+    list-style-type: none;
+    float: left;
+    border: 1px solid grey;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+}
+
+.li_btn_red{
+    width: 100px;
+    list-style-type: none;
+    float: left;
+    border: 1px solid grey;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+}
+
+.li_btn_yellow{
+    width: 100px;
+    list-style-type: none;
+    float: left;
+    border: 1px solid grey;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+}
+
+.li_btn:hover{
+    background-color: #398439;
+}
+
+.li_btn_red:hover{
+    background-color: red;
+}
+
+.li_btn_yellow:hover{
+    background-color: yellow;
+}
+
+.li_btn_red:active{
+    background-color: grey;
+}
+
+.li_btn_yellow:active{
+    background-color: grey;
+}
+
+.li_btn:active{
+    background-color: grey;
+}
+
+.li{
+    width: 100px;
+    list-style-type: none;
+    float: left;
+    border: 1px solid grey;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.fa_angle_left:before {
+    font-family: FontAwesome;
+    font-size: 19px;
+    margin: 10px;
+    padding-right: 5px !important;
+}
+
+.fa_angle_right:before {
+    font-family: FontAwesome;
+    font-size: 19px;
+    margin: 10px;
+    padding-right: 5px !important;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,29 @@
+.bluebtn {
+    background-color: #0073b7 !important;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    touch-action: manipulation;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bluebtn:hover {
+    background-color: #0083d1 !important;
+}
+
+.bluebtn:active {
+    border: 1px solid sandybrown;
+}
+
+.addbtn {
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+}
+
+.namefild{
+    width: 500px;
+    height: 20px;
+}

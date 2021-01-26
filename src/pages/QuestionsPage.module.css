@@ -1,0 +1,40 @@
+.header {
+    height: 80px;
+}
+
+.title {
+    margin-left: 10px;
+    float: left;
+}
+
+.addbtn {
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.bluebtn {
+    background-color: #0073b7 !important;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    touch-action: manipulation;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bluebtn:hover {
+    background-color: #0083d1 !important;
+}
+
+.bluebtn:active {
+    border: 1px solid sandybrown;
+}
